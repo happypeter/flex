@@ -1,0 +1,49 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.5rem;
+  -webkit-font-smoothing: antialiased;
+  color: #727272;
+}
+
+.app-wrap {
+  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-wrap > * {
+  flex: 0 0 auto;
+}
+
+.app-header {
+  border-bottom: 2px solid #fff59d;
+  background: #00bcd4;
+  height: 83px;
+}
+
+.content {
+  padding: 16px;
+  background-color: #fafafa;
+  line-height: 1.8;
+  flex: 1;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.app-footer {
+  border-top: 1px solid #e6e6e6;
+  background: #00bcd4;
+  height: 87px;
+}
