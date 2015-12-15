@@ -1,9 +1,2 @@
-tmp/*
-database.yml
-alipay.rb
-secrets.yml
-settings.yml
-log/*
-public/assets/
 node_modules
 dist
