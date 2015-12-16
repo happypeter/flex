@@ -12,7 +12,15 @@ $divider-color:        #B6B6B6;
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
-  color: #727272;
+  color: $secondary-text-color;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
 }
 
 .app-wrap {
@@ -21,10 +29,24 @@ body {
   flex-direction: column;
 }
 .app-header {
+  padding: 10px;
+  color: $primary-color-text;
   background-color: $primary-color;
   height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   border-bottom: 2px solid  #fff59d;
   flex-shrink: 0;
+  a {
+    font-size: 11px;
+    color: $primary-color-text;
+  }
+  .button {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 10px 15px;
+    border-radius: 4px;
+  }
 }
 
 .content {
@@ -38,6 +60,24 @@ body {
 .app-footer {
   height: 80px;
   flex-shrink: 0;
+  display: flex;
   background-color: $primary-color;
   border-top: 1px solid #e6e6e6;
+  a {
+    padding: 15px;
+    text-align: center;
+    color: rgba(0,0,0,0.5);
+    border-left: 2px solid rgba(0,0,0,0.1);
+    flex-grow: 1;
+    &:first-child {
+      border-left: 0;
+    }
+    i {
+      display: block;
+      font-size: 25px;
+      color: white;
+      text-shadow: 3px 3px 0 rgba(0,0,0,0.1);
+      padding-bottom: 10px;
+    }
+  }
 }
