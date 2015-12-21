@@ -79,5 +79,11 @@ a {
       text-shadow: 3px 3px 0 rgba(0,0,0,0.1);
       padding-bottom: 10px;
     }
+    &:hover {
+      border-bottom: 4px solid $accent-color;
+    }
+  }
+  a.active {
+    border-bottom: 4px solid $accent-color;
   }
 }

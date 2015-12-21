@@ -89,3 +89,7 @@ a {
       color: white;
       text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
       padding-bottom: 10px; }
+    .app-footer a:hover {
+      border-bottom: 4px solid #FF4081; }
+  .app-footer a.active {
+    border-bottom: 4px solid #FF4081; }
