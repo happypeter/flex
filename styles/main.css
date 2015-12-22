@@ -97,6 +97,9 @@ a {
 .sidebar {
   display: none;
   width: 300px;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
   background-color: #00BCD4; }
   .sidebar a.active {
     color: #fff;
@@ -142,3 +145,44 @@ a {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column; } }
+
+.course {
+  margin: 0 auto;
+  padding: 16px; }
+  .course .card {
+    -webkit-transition: all 450ms ease;
+    transition: all 450ms ease;
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+    text-align: center;
+    padding: 10px;
+    margin: 20px 0;
+    width: 100%; }
+    .course .card img {
+      max-width: 100%;
+      margin: 0 auto;
+      border: 1px solid #eee; }
+    .course .card .text {
+      margin-top: 15px;
+      margin-bottom: 15px;
+      word-wrap: break-word; }
+    .course .card:hover {
+      cursor: pointer;
+      box-shadow: 0 1px 12px rgba(0, 0, 0, 0.12), 0 1px 8px rgba(0, 0, 0, 0.24); }
+
+@media (min-width: 1000px) {
+  .course {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+    .course .card {
+      margin: 20px;
+      width: calc(50% - 40px); } }
+
+@media (min-width: 1200px) {
+  .course .card {
+    width: calc(33.33333% - 40px); } }
