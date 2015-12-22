@@ -87,3 +87,48 @@ a {
     border-bottom: 4px solid $accent-color;
   }
 }
+
+.sidebar {
+  display: none;
+  width: 300px;
+  background-color: $primary-color;
+  a.active {
+    color: #fff;
+    background-color: rgba(0,0,0,0.2);
+  }
+  h1 {
+     margin: 0;
+     text-align: center;
+     padding: 20px;
+     color: #fff;
+     border-bottom: 2px solid #fff59d;
+  }
+  a {
+    display: flex;
+    padding: 20px;
+    font-size: 18px;
+    color: rgba(0,0,0,0.5);
+    &:hover {
+      background-color: rgba(0,0,0,0.1);
+    }
+    i {
+      color: #fff;
+      text-shadow: 3px 3px 0 rgba(0,0,0,0.1);
+      display: inline-block;
+      margin-right: 10px;
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  .app-wrap {
+    flex-direction: row;
+  }
+  .app-header , .app-footer {
+    display: none;
+  }
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+  }
+}
