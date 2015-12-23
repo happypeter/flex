@@ -10,6 +10,7 @@ $secondary-text-color: #727272;
 $divider-color:        #B6B6B6;
 
 body {
+  font-family: sans-serif;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   color: $secondary-text-color;
@@ -21,4 +22,7 @@ body {
 
 a {
   text-decoration: none;
+}
+ul {
+  padding: 0;
 }
